@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wh_covid19/view/icu_non_intensivist/daily_round/daily_round_view.dart';
 
 import 'hard_data.dart';
 import 'intro_router.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
             _navigateScreenData(context, routeToScreenData[Routes.ventilationInitialActions]),
         Routes.ventilationAdjuncts: (context) =>
             _navigateScreenData(context, routeToScreenData[Routes.ventilationAdjuncts]),
-        Routes.generalCare: (context) => GeneralCareView(),
+        Routes.generalCare: (context) => ICUDailyRoundView(),
         Routes.tipsJuniorStaff: (context) => TipsJuniorStaffView(),
         Routes.introRouter: (context) => IntroRouter(),
         Routes.disclaimer: (context) => DisclaimerView(),

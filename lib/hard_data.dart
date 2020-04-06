@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import 'models/IntubationChecklist.dart';
 import 'models/PPEStepInfo.dart';
+import 'models/icu_dailyRound_steps.dart';
 import 'models/intubation_guide.dart';
 import 'models/ventilation_guide.dart';
 
@@ -443,6 +444,17 @@ const List<VentilationGuideItem> ventilationGuide = [
           VentilationGuideItemListItem(title: 'Try prone position', icon: '↪️'),
         ]),
   ]),
+];
+
+List<ICUDailyRoundSteps> icuDailyRoundSteps = [
+  const ICUDailyRoundSteps(heading: 'A - Airway', sectionList: [
+    ICUDailyRoundStepSection(heading: 'Assessment', subsections: [
+      ICUDailyRoundStepSubsection(heading: 'ETT (Endotracheal Tube)', notice: '', list: [
+        ICUDailyRoundItem(icon: '👉', title: 'Size?'),
+        ICUDailyRoundItem(icon: '👉', title: 'Position?'),
+      ])
+    ])
+  ])
 ];
 // Feedback form
 const String feedbackFormUrl = 'https://forms.gle/zQtfhvswrKmjJjNV7';
